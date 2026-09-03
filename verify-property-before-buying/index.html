@@ -208,6 +208,25 @@
   .article-body p.lead{ color:var(--ink); font-family:var(--serif); font-size:20px; font-style:italic; line-height:1.5; }
   .article-back{ display:inline-block; margin-top:8px; font-family:var(--mono); font-size:12px; color:var(--ink-faint); }
   .article-back:hover{ color:var(--ink); }
+  .case-note{
+    margin:8px 0 38px;
+    padding:30px 34px;
+    border-left:2px solid var(--ink);
+    background:#faf9f6;
+  }
+  .case-note .case-label{
+    display:block;
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    margin-bottom:14px;
+  }
+  .case-note p{ margin-bottom:0; color:var(--ink); font-size:16px; line-height:1.75; }
+  @media (max-width:600px){
+    .case-note{ padding:24px 22px; }
+  }
 
   @media (max-width:900px){
     .wrap, .nav-inner{ padding-left:24px; padding-right:24px; }
@@ -261,9 +280,12 @@
 
   <section class="article-body wrap">
     <p class="lead">Buying a property from a distance usually means relying on listing photos, a video call, and whatever the seller or agent chooses to show you.</p>
-    <p>What they don't show is what actually matters: for instance, the noise, the construction next door, what's directly behind the plot, and how secure or exposed the access really is. Not being able to see it yourself is one of the most common reasons a purchase falls apart later, not because it was misrepresented on purpose, but only those selling it actually looked.</p>
+    <p>What those don't show is what actually matters: the noise, the construction next door, what's directly behind the plot, how secure or exposed the access really is. Not being able to see it yourself is one of the most common reasons a purchase falls apart later, not because it was misrepresented on purpose, but because nobody who wasn't selling it actually looked.</p>
     <p>I go to the property in person, wherever it is, walk it on camera, and if that's not enough, do it live so you can ask questions in real time while I'm standing there. Afterward I write up what I found as an independent party, with no stake in whether the deal goes through.</p>
-    <p>One example: a client I met in Colombia was about to buy a property in Thailand he had never seen in person, and knew the seller only from a distance. I went to the location, met the seller, filmed a walkthrough, and switched to a live call when he wanted to see more. He decided not to go ahead with the purchase, based on what the report showed.</p>
+    <div class="case-note">
+      <span class="case-label">Case note</span>
+      <p>A client I met in Colombia was about to buy a property in Thailand he had never seen in person, and knew the seller only from a distance. I went to the location, met the seller, filmed a walkthrough, and switched to a live call when he wanted to see more. He decided not to go ahead with the purchase, based on what the report showed.</p>
+    </div>
     <a class="btn" href="#contact">Get in touch if there's a property you need checked</a>
     <div><a class="article-back" href="/notes/">&larr; Back to Notes</a></div>
   </section>
@@ -317,3 +339,4 @@
 
 </body>
 </html>
+
