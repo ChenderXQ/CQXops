@@ -208,6 +208,25 @@
   .article-body p.lead{ color:var(--ink); font-family:var(--serif); font-size:20px; font-style:italic; line-height:1.5; }
   .article-back{ display:inline-block; margin-top:8px; font-family:var(--mono); font-size:12px; color:var(--ink-faint); }
   .article-back:hover{ color:var(--ink); }
+  .case-note{
+    margin:8px 0 38px;
+    padding:30px 34px;
+    border-left:2px solid var(--ink);
+    background:#faf9f6;
+  }
+  .case-note .case-label{
+    display:block;
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    margin-bottom:14px;
+  }
+  .case-note p{ margin-bottom:0; color:var(--ink); font-size:16px; line-height:1.75; }
+  @media (max-width:600px){
+    .case-note{ padding:24px 22px; }
+  }
 
   @media (max-width:900px){
     .wrap, .nav-inner{ padding-left:24px; padding-right:24px; }
@@ -261,9 +280,12 @@
 
   <section class="article-body wrap">
     <p class="lead">A private sale for something valuable often comes down to photos, a video call, and trust in someone you've never met in person.</p>
-    <p>A rare item, a collectible, a piece with real provenance behind it, that's fine, until the stakes are high enough that a mistake becomes expensive.</p>
+    <p>A rare item, a collectible, a piece with real provenance behind it, that's fine until the value at stake makes a mistake expensive.</p>
     <p>I go and look at the item directly: condition, the details that don't survive a video call, and anything that would change its value if it turned out different from what was described. Where the actual authentication needs a certified specialist, I bring one in rather than offering my own opinion on something outside my expertise.</p>
-    <p>One example: a client had all but agreed to buy a historic sword from a private seller abroad, based only on calls and video. I flew out, examined the blade directly, checked the documentation the seller claimed to have, and confirmed the seller and situation matched what the client had been told. The certification itself went through the right specialist afterward.</p>
+    <div class="case-note">
+      <span class="case-label">Case note</span>
+      <p>A client had all but agreed to buy a historic sword from a private seller abroad, based only on calls and video. I flew out, examined the blade directly, checked the documentation the seller claimed to have, and confirmed the seller and situation matched what the client had been told. The certification itself went through the right specialist afterward.</p>
+    </div>
     <a class="btn" href="#contact">Get in touch before you finalize a private sale</a>
     <div><a class="article-back" href="/notes/">&larr; Back to Notes</a></div>
   </section>
