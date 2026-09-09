@@ -82,88 +82,89 @@
     color:var(--ink-faint);
     margin-top:4px;
   }
+  nav{ display:flex; gap:38px; align-items:center; }
   nav a{
-    font-size:13px;
-    letter-spacing:0.04em;
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
     color:var(--ink-soft);
-    border:1px solid var(--line);
-    padding:10px 20px;
+    padding-bottom:5px;
+    border-bottom:1px solid transparent;
     transition:color .15s ease, border-color .15s ease;
   }
-  nav a:hover{ color:var(--ink); border-color:var(--ink); }
+  nav a:hover{ color:var(--ink); border-bottom-color:var(--ink); }
+  nav a:last-child{ color:var(--ink); border-bottom-color:var(--ink); }
+  nav a .short{ display:none; }
 
   /* ---------- Hero / Introduction ---------- */
-  .hero{
-    padding:170px 0 120px;
-    border-bottom:1px solid var(--line);
-  }
-  .hero-lockup{ display:flex; flex-direction:column; gap:18px; margin-bottom:64px; }
-  .hero-lockup .brand{
+  .hero{ padding:160px 0 150px; }
+  .hero-stmt{
     font-family:var(--serif);
     font-weight:500;
-    font-size:clamp(52px, 8vw, 96px);
+    font-size:clamp(38px, 5.4vw, 68px);
+    line-height:1.08;
     letter-spacing:-0.01em;
-    line-height:0.95;
-  }
-  .hero-lockup .tagline{
-    font-family:var(--mono);
-    font-size:14px;
-    letter-spacing:0.14em;
-    text-transform:uppercase;
-    color:var(--ink-soft);
-  }
-  .hero-desc{
-    max-width:560px;
-    font-family:var(--serif);
-    font-size:24px;
-    font-style:italic;
-    color:var(--ink-soft);
-    line-height:1.5;
-    margin-bottom:28px;
+    max-width:940px;
   }
   .hero-body{
-    max-width:560px;
+    max-width:580px;
     font-size:16px;
     color:var(--ink-soft);
-    margin-bottom:48px;
+    margin:42px 0 50px;
   }
+
   .btn{
     display:inline-block;
-    padding:16px 32px;
-    border:1px solid var(--ink);
-    font-size:13px;
-    letter-spacing:0.06em;
-    text-transform:uppercase;
     font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--ink);
     background:none;
+    border:none;
+    border-bottom:1px solid var(--ink);
+    padding:0 0 7px;
     cursor:pointer;
-    transition:background .15s ease, color .15s ease;
+    transition:color .15s ease, border-color .15s ease;
   }
-  .btn:hover{ background:var(--ink); color:var(--bg); }
-  .btn-invert{ border:1px solid var(--dark-text); color:var(--dark-text); }
-  .btn-invert:hover{ background:var(--dark-text); color:var(--dark); }
+  .btn:hover{ color:var(--ink-faint); border-bottom-color:var(--ink-faint); }
+  .btn-invert{
+    border:1px solid rgba(242,240,236,0.35);
+    border-radius:2px;
+    color:var(--dark-text);
+  }
+  .btn-invert:hover{ background:var(--dark-text); color:var(--dark); border-color:var(--dark-text); }
 
   /* ---------- Homepage blocks ---------- */
-  .blocks{ padding:100px 0 120px; }
-  .block + .block{ margin-top:96px; }
+  .band{ background:#faf9f6; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .block{ padding:110px 0 120px; }
+  .block .eyebrow{ display:block; margin-bottom:18px; }
   .block-title{
     font-family:var(--serif);
     font-weight:500;
-    font-size:clamp(28px, 3.6vw, 38px);
+    font-size:clamp(30px, 4vw, 40px);
     line-height:1.15;
-    margin-bottom:24px;
+    margin-bottom:18px;
   }
   .block-intro{
     max-width:620px;
     color:var(--ink-soft);
     font-size:16px;
-    margin-bottom:34px;
+    margin-bottom:56px;
   }
-  .reasons{ max-width:680px; border-top:1px solid var(--line); }
+
+  .reasons{
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0,1fr));
+    column-gap:80px;
+  }
   .reasons li{
     list-style:none;
-    border-bottom:1px solid var(--line);
-    padding:22px 0;
+    border-top:1px solid var(--line);
+    padding:28px 0 32px;
+  }
+  .reasons .t{
     font-family:var(--serif);
     font-style:italic;
     font-size:19px;
@@ -171,22 +172,30 @@
     color:var(--ink);
   }
   .block-after{
-    margin-top:28px;
+    margin-top:44px;
     font-family:var(--mono);
     font-size:12px;
     letter-spacing:0.04em;
     color:var(--ink-faint);
   }
-  .block-after a{ border-bottom:1px solid var(--line); }
+  .block-after a{ border-bottom:1px solid var(--ink-faint); }
   .block-after a:hover{ color:var(--ink); border-color:var(--ink); }
-  .block p.body{
-    max-width:620px;
-    color:var(--ink-soft);
-    font-size:16px;
-    line-height:1.75;
-    margin-bottom:24px;
+
+  .trio{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0,1fr));
+    gap:60px;
+    margin-top:60px;
   }
-  .block p.body:last-child{ margin-bottom:0; }
+  .trio .c{ border-top:1px solid var(--line); padding-top:30px; }
+  .trio h3{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:21px;
+    line-height:1.3;
+    margin-bottom:12px;
+  }
+  .trio p{ font-size:15px; line-height:1.7; color:var(--ink-soft); }
 
   /* ---------- Contact (inverse) ---------- */
   .contact{
@@ -312,25 +321,27 @@
     .contact-watermark{ font-size:140px; }
   }
   @media (max-width:600px){
-    .hero{ padding:110px 0 80px; }
-    .blocks{ padding:70px 0 90px; }
-    .reasons li{ font-size:17px; padding:20px 0; }
-    .block + .block{ margin-top:72px; }
+    .hero{ padding:104px 0 74px; }
+    .hero-body{ margin:30px 0 38px; }
+    .block{ padding:72px 0 80px; }
+    .block-intro{ margin-bottom:40px; }
+    .reasons{ grid-template-columns:1fr; column-gap:0; }
+    .reasons .t{ font-size:17px; }
+    .trio{ grid-template-columns:1fr; gap:36px; margin-top:44px; }
     .contact{ padding-top:100px; }
     .nav-inner{ padding:16px 20px; }
     .lockup-small .tagline{ display:none; }
-    nav a{
-      padding:9px 14px;
-      font-size:11px;
-      letter-spacing:0.02em;
-      white-space:nowrap;
-    }
+    nav{ gap:22px; }
+    nav a{ font-size:10px; letter-spacing:0.1em; white-space:nowrap; }
+    nav a .full{ display:none; }
+    nav a .short{ display:inline; }
     .contact-direct .v-row{ gap:12px; }
     .contact-direct .v-row .btn{ padding:11px 16px; font-size:11px; }
   }
   @media (max-width:380px){
     .lockup-small .brand{ font-size:16px; }
-    nav a{ padding:8px 10px; font-size:10px; }
+    nav{ gap:16px; }
+    nav a{ font-size:9px; letter-spacing:0.08em; }
   }
 
   :focus-visible{ outline:2px solid var(--ink); outline-offset:3px; }
@@ -353,42 +364,51 @@
     <nav>
       <a href="/about/">About</a>
       <a href="/notes/">Notes</a>
-      <a href="#contact">Confidential inquiries</a>
+      <a href="#contact"><span class="full">Confidential inquiries</span><span class="short">Contact</span></a>
     </nav>
   </div>
 </header>
 
 <main id="top">
   <section class="hero wrap">
-    <div class="hero-lockup">
-      <span class="brand">CQX</span>
-      <span class="tagline">Field Operations &amp; Intelligence</span>
-    </div>
-    <p class="hero-desc">Discreet support for private assignments.</p>
-    <p class="hero-body">CQX provides independent field intelligence, verification, and operational coordination for private clients and family offices worldwide.</p>
+    <h1 class="hero-stmt">I go to places and find out what is actually there.</h1>
+    <p class="hero-body">Independent field verification for private clients and family offices worldwide.</p>
     <a href="#contact" class="btn">Request a confidential conversation</a>
   </section>
 
-  <section class="blocks wrap">
-    <div class="block">
+  <section class="band">
+    <div class="block wrap">
+      <span class="eyebrow">Requests</span>
       <h2 class="block-title">Why people call me</h2>
       <p class="block-intro">The requests usually sound like this.</p>
       <ul class="reasons">
-        <li>I want a situational report on something I am considering buying.</li>
-        <li>I want to know what a place is actually like before I commit to it.</li>
-        <li>I want someone to look at an item in person before the money moves.</li>
-        <li>I want an independent account of a situation abroad, from someone with no interest in the outcome.</li>
-        <li>I need something looked at quickly, somewhere I cannot get to myself.</li>
-        <li>I want to know what is actually there before I decide.</li>
+          <li><span class="t">I want a situational report on something I am considering buying.</span></li>
+          <li><span class="t">I want to know what a place is actually like before I commit to it.</span></li>
+          <li><span class="t">I want someone to look at an item in person before the money moves.</span></li>
+          <li><span class="t">I want an independent account of a situation abroad, from someone with no interest in the outcome.</span></li>
+          <li><span class="t">I need something looked at quickly, somewhere I cannot get to myself.</span></li>
+          <li><span class="t">I want to know what is actually there before I decide.</span></li>
       </ul>
       <p class="block-after">Recent examples are in the <a href="/notes/">Notes</a>.</p>
     </div>
+  </section>
 
-    <div class="block">
-      <h2 class="block-title">What you get back</h2>
-      <p class="body">A written report, with whatever needs to go with it. Images, video, or a specialist's assessment where that is part of the answer.</p>
-      <p class="body">I fill the gap where you cannot be there yourself to check it.</p>
-      <p class="body">I do not put a value on anything and I do not certify anything myself. I have nothing to gain from the outcome, so the decision stays yours alone.</p>
+  <section class="block wrap">
+    <span class="eyebrow">Reporting</span>
+    <h2 class="block-title">What you get back</h2>
+    <div class="trio">
+      <div class="c">
+        <h3>The report</h3>
+        <p>Written, with whatever needs to go with it. Images, video, or a specialist's assessment where that is part of the answer.</p>
+      </div>
+      <div class="c">
+        <h3>The purpose</h3>
+        <p>I fill the gap where you cannot be there yourself to check it.</p>
+      </div>
+      <div class="c">
+        <h3>What it is not</h3>
+        <p>I do not put a value on anything and I do not certify anything myself. I have nothing to gain from the outcome, so the decision stays yours alone.</p>
+      </div>
     </div>
   </section>
 </main>

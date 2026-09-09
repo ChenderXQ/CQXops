@@ -81,33 +81,43 @@
     color:var(--ink-faint);
     margin-top:4px;
   }
-  nav{ display:flex; gap:10px; }
+  nav{ display:flex; gap:38px; align-items:center; }
   nav a{
-    font-size:13px;
-    letter-spacing:0.04em;
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
     color:var(--ink-soft);
-    border:1px solid var(--line);
-    padding:10px 20px;
+    padding-bottom:5px;
+    border-bottom:1px solid transparent;
     transition:color .15s ease, border-color .15s ease;
   }
-  nav a:hover{ color:var(--ink); border-color:var(--ink); }
+  nav a:hover{ color:var(--ink); border-bottom-color:var(--ink); }
+  nav a:last-child{ color:var(--ink); border-bottom-color:var(--ink); }
+  nav a .short{ display:none; }
 
   .btn{
     display:inline-block;
-    padding:16px 32px;
-    border:1px solid var(--ink);
-    font-size:13px;
-    letter-spacing:0.06em;
-    text-transform:uppercase;
     font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--ink);
     background:none;
+    border:none;
+    border-bottom:1px solid var(--ink);
+    padding:0 0 7px;
     cursor:pointer;
-    transition:background .15s ease, color .15s ease;
+    transition:color .15s ease, border-color .15s ease;
   }
-  .btn:hover{ background:var(--ink); color:var(--bg); }
-  .btn-small{ padding:12px 22px; font-size:12px; }
-  .btn-invert{ border:1px solid var(--dark-text); color:var(--dark-text); }
-  .btn-invert:hover{ background:var(--dark-text); color:var(--dark); }
+  .btn:hover{ color:var(--ink-faint); border-bottom-color:var(--ink-faint); }
+  .btn-small{ font-size:11px; }
+  .btn-invert{
+    border:1px solid rgba(242,240,236,0.35);
+    border-radius:2px;
+    color:var(--dark-text);
+  }
+  .btn-invert:hover{ background:var(--dark-text); color:var(--dark); border-color:var(--dark-text); }
 
   .contact{
     background:var(--dark);
@@ -270,14 +280,18 @@
     .contact{ padding-top:100px; }
     .nav-inner{ padding:16px 20px; }
     .lockup-small .tagline{ display:none; }
-    nav a{ padding:9px 14px; font-size:11px; letter-spacing:0.02em; white-space:nowrap; }
+    nav{ gap:22px; }
+    nav a{ font-size:10px; letter-spacing:0.1em; white-space:nowrap; }
+    nav a .full{ display:none; }
+    nav a .short{ display:inline; }
     .contact-direct .v-row{ gap:12px; }
     .contact-direct .v-row .btn{ padding:11px 16px; font-size:11px; }
     .footer-bottom{ flex-direction:column; gap:6px; }
   }
   @media (max-width:380px){
     .lockup-small .brand{ font-size:16px; }
-    nav a{ padding:8px 10px; font-size:10px; }
+    nav{ gap:16px; }
+    nav a{ font-size:9px; letter-spacing:0.08em; }
   }
 
   :focus-visible{ outline:2px solid var(--ink); outline-offset:3px; }
@@ -300,7 +314,7 @@
     <nav>
       <a href="/about/">About</a>
       <a href="/notes/">Notes</a>
-      <a href="#contact">Confidential inquiries</a>
+      <a href="#contact"><span class="full">Confidential inquiries</span><span class="short">Contact</span></a>
     </nav>
   </div>
 </header>
