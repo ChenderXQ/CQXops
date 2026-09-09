@@ -94,7 +94,7 @@
 
   /* ---------- Hero / Introduction ---------- */
   .hero{
-    padding:170px 0 160px;
+    padding:170px 0 120px;
     border-bottom:1px solid var(--line);
   }
   .hero-lockup{ display:flex; flex-direction:column; gap:18px; margin-bottom:64px; }
@@ -142,6 +142,51 @@
   .btn:hover{ background:var(--ink); color:var(--bg); }
   .btn-invert{ border:1px solid var(--dark-text); color:var(--dark-text); }
   .btn-invert:hover{ background:var(--dark-text); color:var(--dark); }
+
+  /* ---------- Homepage blocks ---------- */
+  .blocks{ padding:100px 0 120px; }
+  .block + .block{ margin-top:96px; }
+  .block-title{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:clamp(28px, 3.6vw, 38px);
+    line-height:1.15;
+    margin-bottom:24px;
+  }
+  .block-intro{
+    max-width:620px;
+    color:var(--ink-soft);
+    font-size:16px;
+    margin-bottom:34px;
+  }
+  .reasons{ max-width:680px; border-top:1px solid var(--line); }
+  .reasons li{
+    list-style:none;
+    border-bottom:1px solid var(--line);
+    padding:22px 0;
+    font-family:var(--serif);
+    font-style:italic;
+    font-size:19px;
+    line-height:1.5;
+    color:var(--ink);
+  }
+  .block-after{
+    margin-top:28px;
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:0.04em;
+    color:var(--ink-faint);
+  }
+  .block-after a{ border-bottom:1px solid var(--line); }
+  .block-after a:hover{ color:var(--ink); border-color:var(--ink); }
+  .block p.body{
+    max-width:620px;
+    color:var(--ink-soft);
+    font-size:16px;
+    line-height:1.75;
+    margin-bottom:24px;
+  }
+  .block p.body:last-child{ margin-bottom:0; }
 
   /* ---------- Contact (inverse) ---------- */
   .contact{
@@ -267,7 +312,10 @@
     .contact-watermark{ font-size:140px; }
   }
   @media (max-width:600px){
-    .hero{ padding:110px 0 100px; }
+    .hero{ padding:110px 0 80px; }
+    .blocks{ padding:70px 0 90px; }
+    .reasons li{ font-size:17px; padding:20px 0; }
+    .block + .block{ margin-top:72px; }
     .contact{ padding-top:100px; }
     .nav-inner{ padding:16px 20px; }
     .lockup-small .tagline{ display:none; }
@@ -319,6 +367,29 @@
     <p class="hero-desc">Discreet support for private assignments.</p>
     <p class="hero-body">CQX provides independent field intelligence, verification, and operational coordination for private clients and family offices worldwide.</p>
     <a href="#contact" class="btn">Request a confidential conversation</a>
+  </section>
+
+  <section class="blocks wrap">
+    <div class="block">
+      <h2 class="block-title">Why people call me</h2>
+      <p class="block-intro">The requests usually sound like this.</p>
+      <ul class="reasons">
+        <li>I want a situational report on something I am considering buying.</li>
+        <li>I want to know what a place is actually like before I commit to it.</li>
+        <li>I want someone to look at an item in person before the money moves.</li>
+        <li>I want an independent account of a situation abroad, from someone with no interest in the outcome.</li>
+        <li>I need something looked at quickly, somewhere I cannot get to myself.</li>
+        <li>I want to know what is actually there before I decide.</li>
+      </ul>
+      <p class="block-after">Recent examples are in the <a href="/notes/">Notes</a>.</p>
+    </div>
+
+    <div class="block">
+      <h2 class="block-title">What you get back</h2>
+      <p class="body">A written report, with whatever needs to go with it. Images, video, or a specialist's assessment where that is part of the answer.</p>
+      <p class="body">I fill the gap where you cannot be there yourself to check it.</p>
+      <p class="body">I do not put a value on anything and I do not certify anything myself. I have nothing to gain from the outcome, so the decision stays yours alone.</p>
+    </div>
   </section>
 </main>
 
