@@ -350,6 +350,12 @@
     html{ scroll-behavior:auto; }
     *{ transition:none !important; }
   }
+
+  /* Mobiele zijmarges. Staat bewust als laatste regel, zodat de padding van
+     losse secties (hero, article-body, doc-hero) hem niet meer kan overschrijven. */
+  @media (max-width:900px){
+    .wrap, .nav-inner{ padding-left:24px; padding-right:24px; }
+  }
 </style>
 </head>
 <body>
