@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Verifying an Item Before a Private Sale | CQX</title>
-<meta name="description" content="Buying something valuable from a private seller abroad, based only on photos and a call? I go and check it in person before you pay.">
-<link rel="canonical" href="https://cqxops.com/verify-item-before-private-sale/">
+<title>CQX Field Operations &amp; Intelligence</title>
+<meta name="description" content="Discreet support for private assignments. Independent field intelligence, verification and operational coordination for private clients and family offices worldwide.">
+<link rel="canonical" href="https://cqxops.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CQX Field Operations &amp; Intelligence">
-<meta property="og:url" content="https://cqxops.com/verify-item-before-private-sale/">
-<meta property="og:title" content="Verifying an Item Before a Private Sale | CQX">
-<meta property="og:description" content="Buying something valuable from a private seller abroad, based only on photos and a call? I go and check it in person before you pay.">
+<meta property="og:url" content="https://cqxops.com/">
+<meta property="og:title" content="CQX Field Operations &amp; Intelligence">
+<meta property="og:description" content="Discreet support for private assignments. Independent field intelligence, verification and operational coordination for private clients and family offices worldwide.">
 <meta name="twitter:card" content="summary">
 <style>
   @font-face{
@@ -111,6 +111,7 @@
     color:var(--ink-faint);
   }
 
+  /* ---------- Nav ---------- */
   header{
     position:sticky;
     top:0;
@@ -157,6 +158,23 @@
   nav a:last-child{ color:var(--ink); border-bottom-color:var(--ink); }
   nav a .short{ display:none; }
 
+  /* ---------- Hero / Introduction ---------- */
+  .hero{ padding:160px 0 150px; }
+  .hero-stmt{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:clamp(38px, 5.4vw, 68px);
+    line-height:1.08;
+    letter-spacing:-0.01em;
+    max-width:940px;
+  }
+  .hero-body{
+    max-width:580px;
+    font-size:16px;
+    color:var(--ink-soft);
+    margin:42px 0 50px;
+  }
+
   .btn{
     display:inline-block;
     font-family:var(--mono);
@@ -179,6 +197,68 @@
   }
   .btn-invert:hover{ background:var(--dark-text); color:var(--dark); border-color:var(--dark-text); }
 
+  /* ---------- Homepage blocks ---------- */
+  .band{ background:#faf9f6; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .block{ padding:110px 0 120px; }
+  .block .eyebrow{ display:block; margin-bottom:18px; }
+  .block-title{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:clamp(30px, 4vw, 40px);
+    line-height:1.15;
+    margin-bottom:18px;
+  }
+  .block-intro{
+    max-width:620px;
+    color:var(--ink-soft);
+    font-size:16px;
+    margin-bottom:56px;
+  }
+
+  .reasons{
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0,1fr));
+    column-gap:80px;
+  }
+  .reasons li{
+    list-style:none;
+    border-top:1px solid var(--line);
+    padding:28px 0 32px;
+  }
+  .reasons .t{
+    font-family:var(--serif);
+    font-style:italic;
+    font-size:19px;
+    line-height:1.5;
+    color:var(--ink);
+  }
+  .block-after{
+    margin-top:44px;
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:0.04em;
+    color:var(--ink-faint);
+  }
+  .block-after a{ border-bottom:1px solid var(--ink-faint); }
+  .block-after a:hover{ color:var(--ink); border-color:var(--ink); }
+
+  .trio{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0,1fr));
+    gap:60px;
+    margin-top:60px;
+  }
+  .trio .c{ border-top:1px solid var(--line); padding-top:30px; }
+  .trio h3{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:21px;
+    line-height:1.3;
+    margin-bottom:12px;
+  }
+  .trio p{ font-size:15px; line-height:1.7; color:var(--ink-soft); }
+
+  /* ---------- Contact (inverse) ---------- */
   .contact{
     background:var(--dark);
     color:var(--dark-text);
@@ -212,6 +292,7 @@
     font-size:15px;
     margin-bottom:64px;
   }
+
   .contact-grid{
     display:block;
     max-width:440px;
@@ -219,6 +300,7 @@
     border-top:1px solid var(--dark-line);
     padding-top:64px;
   }
+
   .contact-direct .k{
     font-family:var(--mono);
     font-size:10px;
@@ -236,8 +318,15 @@
     transition:border-color .15s ease;
   }
   .contact-direct a.v:hover{ border-color:rgba(242,240,236,0.5); }
-  .contact-direct .v-row{ display:flex; gap:16px; flex-wrap:wrap; }
-  .contact-direct .v-row .btn{ padding:12px 22px; font-size:12px; }
+  .contact-direct .v-row{
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .contact-direct .v-row .btn{
+    padding:12px 22px;
+    font-size:12px;
+  }
 
   footer{
     background:var(--dark);
@@ -246,7 +335,11 @@
     padding:56px 0 40px;
   }
   .footer-lockup{ display:flex; flex-direction:column; gap:10px; margin-bottom:32px; }
-  .footer-lockup .brand{ font-family:var(--serif); font-weight:500; font-size:28px; }
+  .footer-lockup .brand{
+    font-family:var(--serif);
+    font-weight:500;
+    font-size:28px;
+  }
   .footer-lockup .tagline{
     font-family:var(--mono);
     font-size:11px;
@@ -279,40 +372,8 @@
   }
   .footer-legal a:hover{ color:var(--dark-text); border-color:rgba(242,240,236,0.6); }
 
-  /* ---------- Article ---------- */
-  .article-hero{ padding:170px 0 60px; border-bottom:1px solid var(--line); }
-  .article-title{
-    font-family:var(--serif);
-    font-weight:500;
-    font-size:clamp(34px, 5vw, 52px);
-    line-height:1.1;
-    max-width:760px;
-    margin:20px 0 0;
-  }
-  .article-body{ padding:64px 0 110px; }
-  .article-body p, .article-body .case-note, .article-body .btn, .article-body > div{ max-width:680px; }
-  .article-body p{ margin-bottom:26px; color:var(--ink-soft); font-size:16px; line-height:1.75; }
-  .article-body p.lead{ color:var(--ink); font-family:var(--serif); font-size:20px; font-style:italic; line-height:1.5; }
-  .article-back{ display:inline-block; margin-top:34px; font-family:var(--mono); font-size:12px; color:var(--ink-faint); }
-  .article-back:hover{ color:var(--ink); }
-  .case-note{
-    margin:8px 0 38px;
-    padding:30px 34px;
-    border-left:2px solid var(--ink);
-    background:#faf9f6;
-  }
-  .case-note .case-label{
-    display:block;
-    font-family:var(--mono);
-    font-size:11px;
-    letter-spacing:0.14em;
-    text-transform:uppercase;
-    color:var(--ink-faint);
-    margin-bottom:14px;
-  }
-  .case-note p{ margin-bottom:0; color:var(--ink); font-size:16px; line-height:1.75; }
   @media (max-width:600px){
-    .case-note{ padding:24px 22px; }
+    .footer-bottom{ flex-direction:column; gap:6px; }
   }
 
   @media (max-width:900px){
@@ -321,7 +382,13 @@
     .contact-watermark{ font-size:140px; }
   }
   @media (max-width:600px){
-    .article-hero{ padding:110px 0 50px; }
+    .hero{ padding:104px 0 74px; }
+    .hero-body{ margin:30px 0 38px; }
+    .block{ padding:72px 0 80px; }
+    .block-intro{ margin-bottom:40px; }
+    .reasons{ grid-template-columns:1fr; column-gap:0; }
+    .reasons .t{ font-size:17px; }
+    .trio{ grid-template-columns:1fr; gap:36px; margin-top:44px; }
     .contact{ padding-top:100px; }
     .nav-inner{ padding:16px 20px; }
     .lockup-small .tagline{ display:none; }
@@ -331,7 +398,6 @@
     nav a .short{ display:inline; }
     .contact-direct .v-row{ gap:12px; }
     .contact-direct .v-row .btn{ padding:11px 16px; font-size:11px; }
-    .footer-bottom{ flex-direction:column; gap:6px; }
   }
   @media (max-width:380px){
     .lockup-small .brand{ font-size:16px; }
@@ -352,7 +418,7 @@
 
 <header>
   <div class="nav-inner">
-    <a href="/" class="lockup-small">
+    <a href="#top" class="lockup-small">
       <span class="brand">CQX</span>
       <span class="tagline">Field Operations &amp; Intelligence</span>
     </a>
@@ -364,22 +430,47 @@
   </div>
 </header>
 
-<main>
-  <section class="article-hero wrap">
-    <span class="eyebrow">Notes</span>
-    <h1 class="article-title">Who checks an item in person before a private sale goes through</h1>
+<main id="top">
+  <section class="hero wrap">
+    <h1 class="hero-stmt">I go to places and find out what is actually there.</h1>
+    <p class="hero-body">Independent field verification for private clients and family offices worldwide.</p>
+    <a href="#contact" class="btn">Request a confidential conversation</a>
   </section>
 
-  <section class="article-body wrap">
-    <p class="lead">A private sale for something valuable often comes down to photos, a video call, and trust in someone you've never met in person.</p>
-    <p>A rare item, a collectible, a piece with real provenance behind it, that's fine until the value at stake makes a mistake expensive.</p>
-    <p>I go and look at the item directly: condition, the details that don't survive a video call, and anything that would change its value if it turned out different from what was described. Where the actual authentication needs a certified specialist, I bring one in rather than offering my own opinion on something outside my expertise.</p>
-    <div class="case-note">
-      <span class="case-label">Case note</span>
-      <p>A client had all but agreed to buy a historic sword from a private seller abroad, based only on calls and video. I flew out, examined the blade directly, went through the documentation that came with it, and saw for myself the circumstances the sale was taking place in. I arranged the certification through the right specialist, and once the outcome and the full report were with the client, my involvement ended. The sale and shipping took place afterward, independently of me.</p>
+  <section class="band">
+    <div class="block wrap">
+      <span class="eyebrow">Requests</span>
+      <h2 class="block-title">Why people call me</h2>
+      <p class="block-intro">The requests usually sound like this.</p>
+      <ul class="reasons">
+          <li><span class="t">I want a situational report on something I am considering buying.</span></li>
+          <li><span class="t">I want to know what a place is actually like before I commit to it.</span></li>
+          <li><span class="t">I want someone to look at an item in person before the money moves.</span></li>
+          <li><span class="t">I want an independent account of a situation abroad, from someone with no interest in the outcome.</span></li>
+          <li><span class="t">I need something looked at quickly, somewhere I cannot get to myself.</span></li>
+          <li><span class="t">I want to know what is actually there before I decide.</span></li>
+      </ul>
+      <p class="block-after">Recent examples are in the <a href="/notes/">Notes</a>.</p>
     </div>
-    <a class="btn" href="#contact">Get in touch before you finalize a private sale</a>
-    <div><a class="article-back" href="/notes/">&larr; Back to Notes</a></div>
+  </section>
+
+  <section class="block wrap">
+    <span class="eyebrow">Reporting</span>
+    <h2 class="block-title">What you get back</h2>
+    <div class="trio">
+      <div class="c">
+        <h3>The report</h3>
+        <p>Written, with whatever needs to go with it. Images, video, or a specialist's assessment where that is part of the answer.</p>
+      </div>
+      <div class="c">
+        <h3>The purpose</h3>
+        <p>I fill the gap where you cannot be there yourself to check it.</p>
+      </div>
+      <div class="c">
+        <h3>What it is not</h3>
+        <p>I do not put a value on anything and I do not certify anything myself. I have nothing to gain from the outcome, so the decision stays yours alone.</p>
+      </div>
+    </div>
   </section>
 </main>
 
@@ -420,7 +511,6 @@
       <span>Field Operations &amp; Intelligence</span>
       <span>Sole Proprietorship (Netherlands)</span>
       <span>KvK 42101920</span>
-      <span>Haarlemmermeer, the Netherlands</span>
       <span>VAT NL005495552B17</span>
       <a href="/terms/">General Terms and Conditions</a>
     </div>
