@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About | CQX</title>
-<meta name="description" content="Chan Joeloemsing. I go to places and find out what is actually there. Independent field verification for private clients and family offices worldwide.">
-<link rel="canonical" href="https://cqxops.com/about/">
+<title>Privacy Statement | CQX</title>
+<meta name="description" content="How CQX Field Operations and Intelligence handles personal data: this website, clients, business contacts, and people encountered during an assignment.">
+<link rel="canonical" href="https://cqxops.com/privacy/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CQX Field Operations &amp; Intelligence">
-<meta property="og:url" content="https://cqxops.com/about/">
-<meta property="og:title" content="About | CQX">
-<meta property="og:description" content="Chan Joeloemsing. I go to places and find out what is actually there. Independent field verification for private clients and family offices worldwide.">
+<meta property="og:url" content="https://cqxops.com/privacy/">
+<meta property="og:title" content="Privacy Statement | CQX">
+<meta property="og:description" content="How CQX Field Operations and Intelligence handles personal data: this website, clients, business contacts, and people encountered during an assignment.">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -155,6 +155,7 @@
     transition:color .15s ease, border-color .15s ease;
   }
   .btn:hover{ color:var(--ink-faint); border-bottom-color:var(--ink-faint); }
+  .btn-small{ font-size:11px; }
   .btn-invert{
     border:1px solid rgba(242,240,236,0.35);
     border-radius:2px;
@@ -275,40 +276,56 @@
   }
   .footer-legal a:hover{ color:var(--dark-text); border-color:rgba(242,240,236,0.6); }
 
-  /* ---------- About ---------- */
-  .about-hero{ padding-top:170px; padding-bottom:50px; border-bottom:1px solid var(--line); }
-  .about-title{
+  /* ---------- Legal document ---------- */
+  .doc-hero{ padding-top:170px; padding-bottom:44px; border-bottom:1px solid var(--line); }
+  .doc-title{
     font-family:var(--serif);
     font-weight:500;
-    font-size:clamp(38px, 5.4vw, 58px);
-    line-height:1.05;
-    margin:20px 0 22px;
+    font-size:clamp(34px, 5vw, 52px);
+    line-height:1.1;
+    max-width:760px;
+    margin:20px 0 14px;
   }
-  .about-lead{
-    max-width:620px;
-    font-family:var(--serif);
-    font-size:22px;
-    font-style:italic;
+  .doc-version{
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:0.1em;
+    color:var(--ink-faint);
+    margin-bottom:26px;
+  }
+  .doc-intro{
+    max-width:680px;
+    font-size:15px;
     color:var(--ink-soft);
-    line-height:1.5;
+    margin-bottom:30px;
   }
-  .about-body{ padding-top:60px; padding-bottom:110px; }
-  .about-body p{
-    max-width:660px;
-    margin-bottom:24px;
-    color:var(--ink-soft);
-    font-size:16px;
-    line-height:1.8;
-  }
-  .about-body h2{
-    max-width:660px;
+  .doc-body{ padding-top:56px; padding-bottom:110px; }
+  .doc-body h3, .doc-body p, .doc-body ul, .doc-body > div{ max-width:680px; }
+  .doc-body h3{
     font-family:var(--serif);
-    font-weight:500;
-    font-size:28px;
+    font-weight:600;
+    font-size:20px;
     color:var(--ink);
-    margin:56px 0 20px;
+    margin:44px 0 12px;
   }
-  .about-body .cta{ margin-top:16px; }
+  .doc-body h3:first-child{ margin-top:0; }
+  .doc-body p{ margin-bottom:16px; color:var(--ink-soft); font-size:15px; line-height:1.75; }
+  .doc-body ul{ margin:0 0 16px 0; padding-left:20px; list-style:none; }
+  .doc-body li{
+    position:relative;
+    margin-bottom:9px;
+    color:var(--ink-soft);
+    font-size:15px;
+    line-height:1.7;
+  }
+  .doc-body li:before{
+    content:"\2022";
+    position:absolute;
+    left:-18px;
+    color:var(--ink-faint);
+  }
+  .doc-back{ display:inline-block; margin-top:8px; font-family:var(--mono); font-size:12px; color:var(--ink-faint); }
+  .doc-back:hover{ color:var(--ink); }
 
   @media (max-width:900px){
     .wrap, .nav-inner{ padding-left:24px; padding-right:24px; }
@@ -316,9 +333,7 @@
     .contact-watermark{ font-size:140px; }
   }
   @media (max-width:600px){
-    .about-hero{ padding-top:110px; padding-bottom:40px; }
-    .about-body{ padding-top:44px; padding-bottom:90px; }
-    .about-body h2{ font-size:24px; margin:44px 0 16px; }
+    .doc-hero{ padding-top:110px; padding-bottom:40px; }
     .contact{ padding-top:52px; }
     .nav-inner{ padding:16px 20px; }
     .lockup-small .tagline{
@@ -373,52 +388,69 @@
 </header>
 
 <main>
-  <section class="about-hero wrap">
-    <span class="eyebrow">About</span>
-    <h1 class="about-title">Chan Joeloemsing</h1>
-    <p class="about-lead">I go to places and find out what is actually there.</p>
+  <section class="doc-hero wrap">
+    <span class="eyebrow">Legal</span>
+    <h1 class="doc-title">Privacy Statement</h1>
+    <div class="doc-version">Version 1.0, September 2026</div>
+    <p class="doc-intro">CQX Field Operations &amp; Intelligence, a Dutch sole proprietorship (eenmanszaak), Haarlemmermeer, the Netherlands. KvK 42101920, VAT NL005495552B17. chan@cqxops.com, +31 6 85 34 90 86.</p>
   </section>
 
-  <section class="about-body wrap">
-    <h2>How it all started</h2>
-    <p>Years ago I sold everything I owned and left with a single suitcase. I never really went back to owning things. Not as a statement. It just stayed that way.</p>
-
-    <p>I travelled for years, and while passing through many countries I met a lot of people. At some point one of them asked me to check something for him in the country I happened to be flying to next. He paid me and that was that. Then someone else asked. Then someone I had never met, because my name had been passed on.</p>
-
-    <p>They were small things at first. A man about to buy a property in a country he had never set foot in. Someone who had agreed to buy something valuable from a seller he had only ever seen on a screen.</p>
-
-    <p>None of it was a business at the time. I was travelling, and the requests landed in places I was already going, which made the logistics simple. The work started once I was there. I looked, and I told them what I found, the same way I would if it were my own decision on the line.</p>
-
-    <p>More than one of them told me I should be doing this properly. Not as a compliment, as a practical observation. They said requests like this came up regularly, for them and for people around them, and there was never anyone obvious to hand them to. Sometimes because they could not go themselves. Sometimes because it had to happen quickly. Sometimes because it had to stay quiet.</p>
-
-    <p>It took a while for that to land. It was only after I stopped travelling that I saw it plainly: I had enjoyed the work, and I liked what it took to get it done. What I had been doing as favours was what I wanted to do for a living. And so CQX Field Operations &amp; Intelligence was born.</p>
-
-    <h2>Anywhere</h2>
-
-    <p>I mean that literally. If the question is on the other side of the world, that is where I go. If it is a plot of land three hours from the nearest city, I will spend the day getting there. Long journeys and short notice are not your problem. They are the reason you are hiring someone instead of going yourself.</p>
-
-    <p>It helps having a Dutch passport. Most countries I can enter without a visa, or with one issued on arrival. How quickly I can be somewhere is usually a question of flights rather than paperwork.</p>
-
-    <p>I travel light because that is how I live anyway. Leaving at short notice is not as disruptive for me as it would be for you.</p>
-
-    <p>What I do outside work comes with me, so an unfamiliar city is not an interruption to my life. It is where my life happens to be that week.</p>
-
-    <h2>What I am, and what I am not</h2>
-
-    <p>I am not a specialist and I will not pretend to be one. I cannot tell you whether a signature is genuine or a foundation is sound. What I do is go and see it for myself, record what is actually there, and bring in the right specialist when a question needs a qualified answer.</p>
-
-    <p>You could send someone local and cheaper. The difference is what comes back. I work under a written engagement and my own terms, I am bound to confidentiality, and I have no relationship with the seller, the agent, or anyone else standing to gain. What I report is what I found, including the part you were hoping not to hear.</p>
-
-    <p>Before any of this, in every job I had, I was the one people came to when something had to be sorted out and there was no time to do it the long way. Not because I knew the subject best. Usually I did not. It was because I could see what the situation actually needed, and who to involve to get it done.</p>
-
-    <p>Most requests do not arrive as a clear question. They arrive as unease. A place that looks too good in the photographs. An address that exists on paper and needs to exist in reality as well. A decision that has to be made on Friday and nobody has actually been there. First I work out what the real question is. Then I go and answer it.</p>
-
-    <p>There is no standard package. Every request is looked at on its own, and I say in advance what is possible and what is not, including when the answer is that I am not the right person for it. What does not change is that I go to the location myself. That is the whole point of it.</p>
-
-    <p>What you get back is an independent observation. I have no stake in what you decide afterwards.</p>
-
-    <div class="cta"><a class="btn" href="#contact">Request a confidential conversation</a></div>
+  <section class="doc-body wrap">
+    <h3>Who is responsible</h3>
+    <p>CQX Field Operations &amp; Intelligence is a one person business. I am the controller for all personal data described here. No data protection officer has been appointed, as CQX does not currently carry out processing that requires one under Article 37 GDPR.</p>
+    <h3>This website</h3>
+    <p>This website sets no cookies. It uses no analytics, no tracking and no advertising. There is no contact form, and the fonts are served from this domain rather than from a third party.</p>
+    <p>The site is hosted on GitHub Pages and delivered through Cloudflare. To serve a page and to protect the site against attacks, Cloudflare processes the visitor's IP address and technical request data. The legal basis is my legitimate interest in a working and secure website, Article 6(1)(f) GDPR. I do not receive or consult data about individual visitors.</p>
+    <h3>If you contact me</h3>
+    <p>When you contact me by email, telephone, Signal or WhatsApp, I keep what you send me and my reply. If you use WhatsApp, Meta processes metadata about that contact under its own terms. Signal and email are the more private routes.</p>
+    <p>If your message concerns a possible assignment, the legal basis is the steps taken at your request before entering into a contract, Article 6(1)(b) GDPR. Otherwise it is my legitimate interest in answering the people who write to me.</p>
+    <h3>Clients</h3>
+    <p>For an assignment I process your name and contact details, the details of the engagement, my correspondence with you, the findings I report, and the invoice. The legal basis is the performance of our contract, Article 6(1)(b) GDPR, and for the invoice my legal obligation to keep records, Article 6(1)(c).</p>
+    <p>Assignments are covered by a written engagement and by my confidentiality obligations. I do not use client information for anything other than the assignment, and I do not name my clients.</p>
+    <h3>Business contacts</h3>
+    <p>I keep a record of organisations and professionals I approach or who approach me, containing business contact details and notes on our correspondence. The legal basis is my legitimate interest in building a business, Article 6(1)(f) GDPR. You can object to this at any time and I will remove your details.</p>
+    <p>Client assignments are never recorded in that system.</p>
+    <h3>People I encounter during an assignment</h3>
+    <p>My work takes place in the physical world, so I sometimes record information about people who are not my client. That may be the seller of a property, an agent, a member of staff, or someone else involved in the situation I was asked to look at.</p>
+    <p>I do not investigate individuals as an end in itself. Where a matter calls for that, it belongs with a licensed agency and I say so.</p>
+    <p>Where information about an identifiable person is relevant to the question I was given, I process only what is necessary for that question, and only in the report to my client. That may include information that is already publicly available or that comes from documents and records relevant to the assignment.</p>
+    <p>I do not set out to collect special categories of personal data, such as health, religion, political opinions or trade union membership, or data relating to criminal offences. If I come across such information, I assess whether it is necessary to record or report it at all, and I limit its use accordingly.</p>
+    <p>The legal basis is the legitimate interest of my client and of myself in establishing the facts before a decision is made, Article 6(1)(f) GDPR.</p>
+    <p>Where personal data are obtained from a source other than the person concerned, I may in some cases be unable to inform that person at the time of collection. This can be because doing so would seriously impair the purpose of the assignment, or because another exception under Article 14(5) GDPR applies. Whether an exception applies is assessed for each assignment separately.</p>
+    <h3>Where information comes from</h3>
+    <p>Information may come from you, from my client, from publicly available sources, from documents and professional or commercial records, or from what I observe myself during an assignment.</p>
+    <h3>Who processes data on my behalf</h3>
+    <ul>
+      <li><strong>Zoho</strong> for my business email and for my record of business contacts</li>
+      <li><strong>Proton</strong> for encrypted storage of documents, notes and files</li>
+      <li><strong>Cloudflare</strong> for delivery and security of this website</li>
+      <li><strong>GitHub</strong> for hosting this website</li>
+    </ul>
+    <p>Where these providers process personal data on my behalf, I have the contractual arrangements in place that the GDPR requires. Some of them also process certain data as independent controllers under their own privacy terms.</p>
+    <p>Where personal data are transferred outside the European Economic Area, I use an appropriate transfer mechanism under Chapter V GDPR, such as an adequacy decision or the European Commission's standard contractual clauses. You can ask me which mechanism applies to a specific provider.</p>
+    <h3>How long I keep things</h3>
+    <ul>
+      <li>Assignment records, including reports and relevant correspondence: normally <strong>five years</strong> after the assignment ends, unless a longer or shorter period is required or justified by a legal obligation, a dispute, a claim, or the nature of the assignment</li>
+      <li>Invoices and financial records: <strong>seven years</strong>, as required by Dutch tax law</li>
+      <li>Business contacts: until you object, or until the contact is no longer relevant</li>
+      <li>Other correspondence: no longer than necessary</li>
+    </ul>
+    <h3>Security</h3>
+    <p>I use encrypted communication channels where available. Devices and accounts are protected by strong authentication. Documents and files are held in end to end encrypted cloud storage, which means the storage provider cannot read their contents. Assignment material is not shared with anyone other than the client and, where the assignment requires it, a specialist bound by confidentiality.</p>
+    <p>In the event of a personal data breach I will assess whether notification is required under the GDPR and, where it is, notify the Dutch Data Protection Authority and, where applicable, the people affected, without undue delay.</p>
+    <h3>General points</h3>
+    <p>This website and my services are not directed at children.</p>
+    <p>I do not use automated decision making or profiling. Every report is the result of my own observation and analysis.</p>
+    <h3>Your rights</h3>
+    <p>You have the right to ask what I hold about you, to have it corrected, to have it erased, to restrict its use, and to object to its use. Where the conditions for it are met, you also have the right to receive your data in a portable form.</p>
+    <p>Write to chan@cqxops.com. I will respond without undue delay and in any event within one month of receiving your request. Where the law allows it, that period may be extended by up to two further months, depending on the complexity and the number of requests.</p>
+    <p>Where I hold information about you because of an assignment for a client, these rights are limited by my duty of confidentiality and, in some cases, by the rights of others. I will always tell you when that is the reason.</p>
+    <p>If you are not satisfied, you can complain to the Dutch Data Protection Authority, the Autoriteit Persoonsgegevens.</p>
+    <h3>Changes</h3>
+    <p>If this statement changes, the new version is published on this page with a new version number and date.</p>
+    <div><a class="doc-back" href="/">&larr; Back to home</a></div>
   </section>
+</main>
 </main>
 
 <section id="contact" class="contact">
@@ -456,7 +488,6 @@
     <div class="footer-legal">
       <span>Sole Proprietorship (Netherlands)</span>
       <span>KvK 42101920</span>
-      <span>Haarlemmermeer, the Netherlands</span>
       <span>VAT NL005495552B17</span>
       <a href="/terms/">General Terms and Conditions</a>
       <a href="/privacy/">Privacy Statement</a>
